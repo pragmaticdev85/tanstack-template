@@ -7,3 +7,4 @@ dist-ssr
 .netlify
 .env
 downloads
+yt.sqlite
