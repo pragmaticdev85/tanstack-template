@@ -18,7 +18,7 @@ interface YTStatus {
 }
 
 const results: YTEntry[] = [];
-const filePath: string = './scripts/pl.csv';
+const filePath: string = './public/pl.csv';
 
 const ytDownload = async (entryId: number, videoUrl: string) => {
     const log = (level: 'info' | 'debug' | 'error', message: string) => {
