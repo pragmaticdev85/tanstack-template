@@ -448,3 +448,12 @@ You can find out everything you need to know on how to use TanStack Store in the
 - You can learn more about TanStack in the [TanStack documentation](https://tanstack.com).
 - Learn more about integrating AI with Anthropic's Claude API in the [Anthropic API documentation](https://console.anthropic.com/docs).
 - Learn about using Convex for database storage in the [Convex documentation](https://docs.convex.dev/).
+
+
+bash
+crontab -e
+If the job requires root privileges (e.g., system maintenance), use sudo crontab -e instead.
+Add a new line at the end of the file specifying the schedule and the absolute path to your script. For example, to run the script every day at 3:30 AM:
+crontab
+# Run my_script.sh every day at 3:30 AM
+30 3 * * * /path/to/my_script.sh
