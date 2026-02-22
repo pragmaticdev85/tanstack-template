@@ -36,7 +36,7 @@ const ytDownload = async (entryId: number, videoUrl: string) => {
     };
     if (!videoUrl || videoUrl.length == 0) return;
     // Define the URL and yt-dlp arguments
-    const args = ['-f', 'bestvideo+bestaudio', '-t','mp4','-o', './downloads/%(title)s.%(ext)s', videoUrl];
+    const args = ['-f', 'bestvideo+bestaudio', '-o', './downloads/%(title)s.%(ext)s', videoUrl];
     await new Promise((resolve, reject) => {
         // Spawn the process (ensure 'yt-dlp' is in your system PATH)
         const ytdlp = spawn('yt-dlp', args);
